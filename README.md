@@ -1,5 +1,20 @@
-# YOU DO
-Let's make some changes to this website. Find each step by doing a `command + f` for `STEP#`. 
+# Do now
+* Fork this repo
+* Set up cloud9 workspace
+* Add a `notes.md` file
+* Push to your github repo
+
+In your bash terminal:
+```bash
+git add notes.md
+git commit -m "notes added"
+git push origin master
+```
+
+
+# You do
+Let's make some changes to this website. Find each step by doing a `command + f` for `STEP#`. After each step, commit and push with a message like "step 1 complete" or something similar.
+
 
 ## Complete these fsho
 
