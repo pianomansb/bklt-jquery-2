@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Examples</title>
+
+    <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+	<style type="text/css">
+	body {
+		font-family: courier;
+	}
+	.box {
+		background-color: #ccc;
+		padding: 10px;
+		margin: 20px;
+		text-align: center;
+		height: 150px;
+	}
+
+	.styledBox {
+		font-family: sans-serif;
+		border: 2px solid blue;
+		color: blue;
+		font-size: 20px;
+	}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="box col-md-2" id="click">.click()</div>
+			<div class="box col-md-2" id="mouseover">.mouseover()</div>
+			<div class="box col-md-2" id="mouseout">.mouseout()</div>
+			<div class="box col-md-2" id="toggle">.toggleClass("styledBox")</div>
+			<div class="box col-md-2" id="text">.text("text")</div>
+			<div class="box col-md-2" id="html">.html("new html")</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		$("#click").click(function() {
+			alert("#click box clicked");
+		});
+		$("#mouseover").mouseover(function() {
+			$(this).css("background", "yellow");
+		});
+		$("#mouseout").mouseout(function() {
+			$(this).css("background", "red");
+		});
+		$("#toggle").click(function() {
+			$(this).toggleClass("styledBox");
+		});
+		$("#text").click(function() {
+			$(this).text("some new text");
+		});
+		$("#html").click(function() {
+			$(this).html("<h2>a new header</h2><p>some paragraph text</p>");
+		});
+	</script>
+</body>
+</html>
